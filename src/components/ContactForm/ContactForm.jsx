@@ -4,7 +4,7 @@ import css from "./ContactForm.module.css";
 
 export class ContactForm extends Component{
     state = {
-        name: "",
+        name:"",
         number:"",
     }
 
