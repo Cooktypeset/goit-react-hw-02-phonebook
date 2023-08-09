@@ -44,7 +44,7 @@ export class App extends Component {
   return (
     <div className={css.container}>
     <h2 className = {css.title}>Phonebook</h2>
-      <ContactForm onSubmit={this.formAddContact} />
+      <ContactForm  onAddContact={this.formAddContact} />
       <h3 className = {css.title}>Contacts</h3>
       <Filter value={this.state.filter} onChange={this.changeFilter}/>
       <ContactList contacts={existingContact} onDeleteContact={this.deleteContact} />
